@@ -1,4 +1,3 @@
-.travis.yml
 language: generic 
 sudo: required
 services:
@@ -7,4 +6,4 @@ before_install:
   - docker build -t dshap/react-portfolio -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true dshap/react-portfolio npm run test -- --coverage
+  - docker run -e dshap/react-portfolio npm run test -- --coverage
