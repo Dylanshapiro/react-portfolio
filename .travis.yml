@@ -6,8 +6,5 @@ before_install:
   - docker build -t dshap/react-portfolio -f Dockerfile.dev .
 
 script:
-<<<<<<< HEAD
-  - docker run -e dshap/react-portfolio npm run test -- --coverage
-=======
   - docker run -e CI=true dshap/react-portfolio npm run test -- --coverage
->>>>>>> fc91022e0734c4015aaad733591cf429a8f47139
+
