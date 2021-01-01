@@ -1,11 +1,8 @@
 .travis.yml
 language: generic 
-#needed whenever using docker
 sudo: required
-# dependencies
 services:
   - docker
-#command to run before install
 before_install:
   - docker build -t dshap/react-portfolio -f Dockerfile.dev .
 
